@@ -168,7 +168,7 @@ class _LoginPageState extends State<LoginPage> {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.black26,
+              color: Colors.indigo[900],
               offset: Offset(0, 2),
               blurRadius: 6.0,
             ),
@@ -207,7 +207,7 @@ class _LoginPageState extends State<LoginPage> {
         text:TextSpan(
           children: [
            TextSpan(
-              text: 'Don\'t have an account?',
+              text: 'Don\'t have an account? ',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 18.0,
@@ -260,6 +260,13 @@ class _LoginPageState extends State<LoginPage> {
                   Text(
                     'Sign in',
                     style: TextStyle(
+                      shadows: <Shadow>[
+                       /*****/ Shadow(
+                          offset: Offset(0.0, 6.5),
+                          blurRadius: 5.0,
+                          color: Colors.blue[900],
+                        ),
+                      ],
                       color: Colors.white,
                       fontFamily: 'OpenSans',
                       fontWeight: FontWeight.bold,
